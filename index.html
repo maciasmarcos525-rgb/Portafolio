@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Lisbeth Ángela Macias Montero">
+     <meta name="descripcion" content="Portafolio personal de Lisbeth Ángela Macias Montero">
+     <link rel="shortcut icon" href="imagen y audio/logo.avif" type="image/x-icon">    <!--icono de la pagina -->
+    <title>Portafolio personal</title>    <!-- titulo de encabezado-->
+</head>
+<body>
+   
+    <!--Encabezado en el cuerpo-->
+    <header>
+     <h1>Lisbeth Ángela Macias Montero</h1>    <!--Titulo -->
+    <p>Construyendo mi futuro, una línea de código a la vez.</p>
+    <img src="imagen y audio/foto de perfil.jpg" alt="Foto de perfil">    <!--imagen si llega a fallar en cargar la imagen aparecera el mensaje de alt -->
+    </header>
+       <main>
+         <!-- menu de navegacion-->
+    <h2><strong>Menu de navegacion</strong></h2>
+    <nav>
+       <ul>
+            <!-- click y dirije a la parte que desea de la pagina-->
+        <li><a href="#sobremi">Sobre mi</a></li>
+               <li><a href="#intereses">Intereses</a></li>
+                      <li><a href="#tabladehabilidades">Tabla de habilidades</a></li>
+                             <li><a href="#multimedia">Multimedia</a></li>
+                               <li><a href="#form">Formulario</a></li>
+       </ul>
+    </nav>
+     <!--espacios o saltos de linea -->
+    <!--Seccion donde hablo sobre mi -->
+    <section id="sobremi">    <!--los id en section para direccionar los link del menu de navegacion -->
+     <h2><strong>Sobre mi:</strong></h2>
+     <p>    <!--se utiliza strong para poner en negrita y en para subrayar y p es para hacer el parrafo -->
+Hola, <strong>Lisbeth Ángela Macias Montero</strong> Tengo <em>19 años</em>  y actualmente estudio <br>
+<strong>Ingeniería en Informática</strong>, una carrera que me apasiona <br>
+Anteriormente trabajé en una tienda de calzado y luego en Íntima Secret, experiencias que me ayudaron a fortalecer <br>
+ mi comunicación, la atención al cliente, la capacidad de trabajar bajo presión y la organización. <br>
+ Gracias a esto aprendí a desenvolverme en distintos entornos, adaptarme rápido y mantener siempre una actitud profesional. <br>
+Me considero una persona responsable, empática y comprometida. Me gusta aprender, mejorar cada día y <br>
+enfrentar nuevos retos que me impulsen a crecer tanto en el ámbito técnico como personal. <br>
+</p>
+
+    <!--Seccion donde hablo de mis intereses ordenadas y enumeradas-->
+    </section>
+   <section id="intereses">
+    <h2><strong>Intereses</strong></h2>
+    <ol >    <!--lista ordenada con mis intereses -->
+     <li value="1">Ciberseguridad</li>
+     <li value="2">Desarrollo web </li>
+     <li value="3">Fitness y bienestar</li>
+     <li value="4"> Innovación y creatividad</li>
+      <li value="5"> Marketing digital</li>
+    </ol>
+   </section>
+
+    <!-- tabla de habilidades con nivel -->
+      <h2><strong>Tabla de habilidades </strong></h2>
+<section id="tabladehabilidades">    <!--seccion de habilidades -->
+  <table border="1" >
+    <thead>    <!-- Encabezado de la tabla -->
+         <tr><th>Habilidades</th><th>Nivel</th></tr>
+    </thead>
+        <!-- datos en la tabla -->
+        <tbody>
+        
+    <tr><td>Atención al cliente</td><td> Alta </td></tr>
+     <tr><td>Trabajo en equipo </td><td> intermedio </td></tr>
+      <tr><td>java </td><td> intermedio </td></tr>
+      <tr><td>Pensamiento lógico</td><td> intermedio </td></tr>
+       <tr><td>Programación</td><td> intermedio </td></tr>
+       <tr><td>Trabajo bajo presión</td><td> Avanzado </td></tr>
+        </tbody>
+    <!-- pie de la tabla-->
+       <tfoot>
+        <tr><td>Total de habilidades </td><td> 6 </td></tr>
+       </tfoot>
+  </table>
+  </section>
+  
+
+<h2><strong>Multimedia</strong></h2>
+
+
+    <!-- audio de presentacion de tipo wav -->
+ <audio controls id="multimedia">
+<source src="imagen y audio/audio presentación .mp3" type="audio/mp3"><br>
+ </audio>
+
+
+    <!--Creacion de formulario -->
+<section id="form">
+<h2><strong>Formulario</strong></h2>
+<form  action="/registro"  method="post" >
+<label for="nombre"><strong>Nombre:</strong> </label><br>    <!--para colocar nombre coorreo y edad-->
+<input type="text" id="nombre" name="nombre" required><br>  
+
+<label for="correo"><strong>Correo:</strong> </label><br>
+<input type="email" id="correo" name="correo" required><br> 
+
+<label for="edad"><strong>Edad:</strong> </label><br>
+<input type="number" name="edad" id="edad" min="17"  required><br> 
+
+
+<label for="f"><strong>Genero: </strong></label><br> <!-- elegir genero -->
+<input type="radio" name="Femenino" id="f" value="F">Femenino <br>
+<label for="m"></label>
+<input type="radio"  name="Masculino" id="m" value="M">Masculino <br>
+<label for="o"></label>
+<input type="radio"  name="Otros" id="o" value="o">Otros<br>
+
+<label for="intereses"><strong>Intereses:</strong> </label><br>  <!--checkbox de inetereses-->
+<input type="checkbox" id="Atención al cliente" name="int1" value="Atención al cliente">Atención al cliente<br>
+<label for="intereses2"></label>
+<input type="checkbox" id="Trabajo en equipo "name="int2"value="Trabajo en equipo"> Trabajo en equipo <br>
+<label for="intereses3"></label>
+<input type="checkbox" id="java"name="int3"value="java">java <br>
+<label for="intereses4"></label>
+<input type="checkbox" id="Pensamiento lógico"name="int4"value="Pensamiento lógico">Pensamiento lógico<br>
+<input type="checkbox" id="video"value="video">Editar videos <br>
+
+
+<label><strong>Comentarios:</strong></label>  <!--para colocar comentarios-->
+<textarea name="text" id="escribir" cols="300" rows="10"> 
+</textarea><br>
+<input type="button" value="Enviar">   <br> 
+</form>
+</section>
+</main>
+<footer>
+        <!-- pie de la pagina-->
+    <cite class="author">Lisbeth Ángela Macias Montero</cite><br>    <!--autor -->
+     <a href="https://www.instagram.com/lisbeth_macias_/" target="_blank">Instagram</a><br>    <!--link que los lleva a las redes sociales -->
+     <a href="https://www.facebook.com/lisbeth.macias.1238" target="_blank">Facebook</a><br>
+     <a href="tel:+593 99 748 3414">Contacto</a><br>
+     © 2025. Todos los derechos reservados    <!--derechos -->
+</footer>
+
+
+</body>
+</html>
